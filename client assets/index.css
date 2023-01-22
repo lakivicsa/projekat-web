@@ -1,0 +1,501 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  width: 100%;
+}
+
+.header {
+  padding: 1em;
+  border-bottom: 1px solid rgb(29, 29, 29);
+}
+
+.nba-blue {
+  color: #17408b !important;
+}
+
+.nba-red {
+  color: #c9082a !important;
+}
+
+nav a {
+  font-weight: bold;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+  color: white;
+}
+
+nav a:hover {
+  border-color: #17408b;
+}
+
+.site-heading {
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+}
+
+.p-about {
+  margin-top: 1em;
+}
+
+.about {
+  border-bottom: 1px solid rgb(29, 29, 29);
+  padding-bottom: 5em;
+}
+
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/nba-welcome-background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1,
+.players-intro h1,
+.row-intro h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3.2em;
+}
+
+.intro-padding {
+  padding-top: 5em;
+}
+
+.players-intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/players-intro-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-class {
+  background-color: #17408b;
+  color: aliceblue;
+}
+
+.players-list {
+  background-color: #c9082a;
+  color: aliceblue;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.players-list li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.photo-class h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.8em;
+}
+
+.coaches-intro {
+  min-height: 100vh;
+  color: aliceblue;
+}
+
+.row-intro {
+  padding: 5em 0 3em 0;
+}
+
+.dugme {
+  margin-top: 2em;
+  font-size: 1.2em !important;
+  font-weight: 600 !important;
+  padding: 0.5em 10em !important;
+  background-color: #212529 !important;
+  text-transform: uppercase;
+  color: #fff !important;
+  border-color: #fff !important;
+  transition: all 0.5s ease !important;
+}
+
+.dugme:hover {
+  color: #fff !important;
+  background-color: #212529 !important;
+  transform: translateY(-10px);
+}
+
+.coach-photo {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.ul-li {
+  list-style-type: none;
+  margin-top: 0.2em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.acolades {
+  padding: 0;
+}
+
+.coach-name {
+  font-weight: bold;
+  font-size: 3em;
+  padding: 0.5em;
+  color: #0b1e42;
+}
+
+.facts li {
+  list-style-type: circle;
+}
+
+.line {
+  border-bottom: 5px solid #c9082a;
+}
+
+#greg,
+#spo,
+#lenny {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 2.8em;
+}
+
+.blue {
+  background-color: #0b1e42;
+  color: aliceblue;
+}
+
+.blue h1 {
+  color: aliceblue;
+}
+
+.more {
+  background-color: #0b1e42;
+}
+
+.more h1 {
+  display: block;
+  margin: 0 auto;
+  color: aliceblue;
+  padding: 1.2em 0;
+}
+
+.more a {
+  color: #c9082a;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.more a:hover {
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+textarea {
+  resize: none;
+  height: 10em;
+  width: 30em;
+}
+
+label {
+  padding-top: 0.8em;
+}
+
+.newsletter-img {
+  width: 20em;
+}
+
+.buttons {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.5em 3em !important;
+}
+
+.newsletter h1 {
+  text-transform: uppercase;
+  color: #0b1e42;
+  font-weight: bold;
+}
+
+.nba-socials li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.vicsa-socials li {
+  display: inline-block;
+}
+
+.nba-socials,
+.vicsa-socials {
+  text-align: center;
+  padding: 0;
+}
+
+.footer {
+  color: aliceblue;
+}
+
+.nba-socials li,
+.vicsa-socials li {
+  margin: 0 1em;
+}
+
+.nba-socials a,
+.vicsa-socials a {
+  text-decoration: none;
+}
+
+.icons {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.bold {
+  font-size: 1.25em;
+}
+
+.lista a {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+  border: 1px solid #17408b;
+  color: #fff;
+  background-color: #17408b;
+  transition: all 0.5s ease;
+}
+
+.lista a:hover {
+  color: #17408b;
+  background-color: #fff;
+  transform: translateX(-10px);
+}
+
+.title {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.slider-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.slider-wrapper .slider-images {
+  height: 100%;
+}
+
+.slider-wrapper .slider-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.slider-wrapper .slider-images img:first-child {
+  display: block;
+}
+
+.slider-wrapper button {
+  height: 65px;
+  width: 65px;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  top: 40%;
+  position: absolute;
+  z-index: 999;
+}
+
+.slider-wrapper button .arrow {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+  outline: none;
+}
+
+.slider-wrapper #right-btn {
+  right: 0;
+}
+
+.slider-wrapper #right-btn .arrow {
+  transform: rotate(-45deg);
+}
+
+.slider-wrapper #left-btn {
+  left: 0;
+}
+
+.slider-wrapper #left-btn .arrow {
+  transform: rotate(135deg);
+}
+
+/* -------------------------
+        RESPONSIVE 
+ -------------------------*/
+
+@media (max-width: 1400px) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 766px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  #logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 340px) {
+  .title {
+    font-size: 1.85em;
+  }
+}
+
+@media (min-width: 990px) {
+  #logo {
+    width: 15vh;
+  }
+}
+
+@media (max-width: 530px) {
+  .dugme {
+    padding: 0.5em 5em !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .dugme {
+    padding: 0.5em 2.5em !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .row-intro h1 {
+    font-size: 2.3em;
+  }
+
+  .photo-class h1 {
+    font-size: 1.5em !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .button-space {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro h1,
+  .players-intro h1 {
+    font-size: 2em;
+  }
+
+  .site-heading {
+    font-size: 1.8em;
+  }
+
+  .photo-class h1,
+  .row-intro h1 {
+    font-size: 2em;
+  }
+
+  .intro-padding {
+    padding-top: 1em;
+  }
+
+  .about {
+    padding-bottom: 3em;
+  }
+
+  .players-list li {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .photo-class {
+    padding-bottom: 2em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .ul-li {
+    font-size: 1em !important;
+  }
+
+  .blink {
+    font-size: 18px;
+  }
+
+  .p-about {
+    font-size: 16px;
+  }
+
+  .row-intro h4 {
+    font-size: 18px;
+  }
+
+  .coach-name {
+    font-size: 2em !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .players-list li {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+  li {
+    font-size: 1.27em !important;
+  }
+
+  .photo-class h1 {
+    font-size: 2.3em;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+  .facts {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 992px) {
+  .ul-li {
+    text-align: center;
+  }
+}
