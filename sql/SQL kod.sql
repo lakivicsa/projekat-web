@@ -1,7 +1,8 @@
+-- Table creation
+
 CREATE TABLE Newsletter (
 	newsletterID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
-	fistName NVARCHAR(50) NOT NULL,
-	lastName NVARCHAR(50) NOT NULL,
+	fullName NVARCHAR(100) NOT NULL,
 	email NVARCHAR(50) NOT NULL,
 	comment NVARCHAR(100),
 )
@@ -13,7 +14,7 @@ CREATE TABLE CreateYourTeam (
 
 CREATE TABLE Players (
 	playerID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
-	fistName NVARCHAR(50) NOT NULL,
+	firstName NVARCHAR(50) NOT NULL,
 	lastName NVARCHAR(50) NOT NULL,
 	teamID INT NOT NULL FOREIGN KEY REFERENCES CreateYourTeam(teamID),
 )
@@ -24,3 +25,23 @@ CREATE TABLE Coaches (
 	lastName NVARCHAR(50) NOT NULL,
 	teamID INT NOT NULL FOREIGN KEY REFERENCES CreateYourTeam(teamID),
 )
+
+-- Select *
+
+SELECT * FROM Newsletter
+
+SELECT * FROM CreateYourTeam
+
+SELECT * FROM Players
+
+SELECT * FROM Coaches
+
+-- Drop tables
+
+DROP TABLE Newsletter
+
+DROP TABLE CreateYourTeam
+
+DROP TABLE Players
+
+DROP TABLE Coaches

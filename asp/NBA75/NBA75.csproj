@@ -151,10 +151,49 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\assets\75.png" />
+    <Content Include="Account\assets\75_person_name_template_v216x9-1-1-784x441.jpg" />
+    <Content Include="Account\assets\android-chrome-192x192.png" />
+    <Content Include="Account\assets\android-chrome-512x512.png" />
+    <Content Include="Account\assets\apple-touch-icon.png" />
+    <Content Include="Account\assets\big-logo.jpg" />
+    <Content Include="Account\assets\big-logo2.png" />
+    <Content Include="Account\assets\coach-1.jpg" />
+    <Content Include="Account\assets\coach-10.jpg" />
+    <Content Include="Account\assets\coach-11.jpg" />
+    <Content Include="Account\assets\coach-12.jpg" />
+    <Content Include="Account\assets\coach-13.jpg" />
+    <Content Include="Account\assets\coach-14.jpg" />
+    <Content Include="Account\assets\coach-15.jpg" />
+    <Content Include="Account\assets\coach-2.jpg" />
+    <Content Include="Account\assets\coach-3.jpg" />
+    <Content Include="Account\assets\coach-4.jpg" />
+    <Content Include="Account\assets\coach-5.jpg" />
+    <Content Include="Account\assets\coach-6.jpg" />
+    <Content Include="Account\assets\coach-7.jpg" />
+    <Content Include="Account\assets\coach-8.jpg" />
+    <Content Include="Account\assets\coach-9.jpg" />
+    <Content Include="Account\assets\duo.jpg" />
+    <Content Include="Account\assets\dynasty.jpg" />
+    <Content Include="Account\assets\early-days.jpg" />
+    <Content Include="Account\assets\favicon-16x16.png" />
+    <Content Include="Account\assets\favicon-32x32.png" />
+    <Content Include="Account\assets\favicon.ico" />
+    <Content Include="Account\assets\nba-team-photo.png" />
+    <Content Include="Account\assets\nba-welcome-background.jpg" />
+    <Content Include="Account\assets\nba.png" />
+    <Content Include="Account\assets\nba75-team-intro.jpg" />
+    <Content Include="Account\assets\players-intro-bg.jpg" />
+    <Content Include="Account\assets\popovich.jpg" />
+    <Content Include="Account\assets\recent.jpg" />
+    <Content Include="Account\assets\riley.jpg" />
+    <Content Include="Account\assets\rivers.jpg" />
+    <Content Include="Account\assets\spoelstra.png" />
     <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\CreateYourTeam.aspx" />
     <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Index.aspx" />
     <Content Include="Account\Lockout.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
@@ -167,12 +206,15 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Admin\assets\75.png" />
+    <Content Include="Admin\ManageNewsletter.aspx" />
+    <Content Include="assets\75.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CSS\index.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -185,8 +227,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Admin\Web.config" />
     <Content Include="Account\Web.config" />
+    <Content Include="Account\assets\site.webmanifest" />
+    <Content Include="Account\assets\veb.zip" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="JS\script.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -236,12 +282,26 @@
     <Compile Include="Account\Confirm.aspx.designer.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\CreateYourTeam.aspx.cs">
+      <DependentUpon>CreateYourTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\CreateYourTeam.aspx.designer.cs">
+      <DependentUpon>CreateYourTeam.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\Forgot.aspx.cs">
       <DependentUpon>Forgot.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Forgot.aspx.designer.cs">
       <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Lockout.aspx.cs">
       <DependentUpon>Lockout.aspx</DependentUpon>
@@ -327,24 +387,17 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Admin\ManageNewsletter.aspx.cs">
+      <DependentUpon>ManageNewsletter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Admin\ManageNewsletter.aspx.designer.cs">
+      <DependentUpon>ManageNewsletter.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -355,6 +408,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
