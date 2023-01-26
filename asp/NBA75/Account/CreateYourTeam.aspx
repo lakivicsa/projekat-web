@@ -123,19 +123,8 @@
 
         <asp:Label ID="Label4" runat="server" Text="Select coach:"></asp:Label>
         <br />
-        <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server">
+        <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server" AutoPostBack="true">
             <asp:ListItem></asp:ListItem>
-            <asp:ListItem>Steve Nash</asp:ListItem>
-            <asp:ListItem>Darvin Ham</asp:ListItem>
-            <asp:ListItem>Doc Rivers</asp:ListItem>
-            <asp:ListItem>Terry Stots</asp:ListItem>
-            <asp:ListItem>Eric Spoelstra</asp:ListItem>
-            <asp:ListItem>Jason Kidd</asp:ListItem>
-            <asp:ListItem>Mike Budenholzer</asp:ListItem>
-            <asp:ListItem>Taylor Jenkins</asp:ListItem>
-            <asp:ListItem>Stephen Silas</asp:ListItem>
-            <asp:ListItem>Monty Williams</asp:ListItem>
-            <asp:ListItem>Tyronn Lue</asp:ListItem>
         </asp:DropDownList>
 
         <br />

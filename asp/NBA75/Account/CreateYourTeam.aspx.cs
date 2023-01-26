@@ -17,7 +17,7 @@ namespace NBA75
         int teamID;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            FillDropDown();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -50,6 +50,10 @@ namespace NBA75
                 System.Diagnostics.Debug.WriteLine("SERVER ERROR:");
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 System.Diagnostics.Debug.WriteLine(ex.StackTrace);
+            }
+            finally
+            {
+                connection.Close();
             }
         }
 
@@ -189,9 +193,9 @@ namespace NBA75
         {
             // Disable dugmice za unos igraca i pokazati za unos trenera
 
-            if(GridView1.Rows.Count < 1)
+            if(GridView1.Rows.Count < 6)
             {
-                InsertErrorLabel.Text = "Team needs to have at least 12 players.";
+                InsertErrorLabel.Text = "Team needs to have at least 6 players.";
                 return;
             }
 
@@ -272,6 +276,38 @@ namespace NBA75
             System.Diagnostics.Debug.WriteLine($"First name: {firstName}");
             System.Diagnostics.Debug.WriteLine($"Last name: {lastName}");
             System.Diagnostics.Debug.WriteLine($"Team ID: {GetTeamID(TeamTextBox.Text)}");
+        }
+
+        protected void FillDropDown()
+        {
+            if(!IsPostBack)
+            {
+                try
+                {
+                    connection.Open();
+
+                    string query = "SELECT firstName + ' ' + lastName FROM Coaches";
+
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        DropDownList1.Items.Add(reader[0].ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine("SERVER ERROR.");
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                    System.Diagnostics.Debug.WriteLine(ex.StackTrace);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
         }
     }
 }

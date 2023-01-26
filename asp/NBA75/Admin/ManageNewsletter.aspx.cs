@@ -135,6 +135,7 @@ namespace NBA75.Admin
         {
             try
             {
+                connection.Open();
                 string query = "SELECT * FROM Newsletter";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 DataTable table = new DataTable();
@@ -147,6 +148,10 @@ namespace NBA75.Admin
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 System.Diagnostics.Debug.WriteLine(ex.StackTrace);
+            }
+            finally
+            {
+                connection.Close();
             }
         }
     }

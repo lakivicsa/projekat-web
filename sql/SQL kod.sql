@@ -23,7 +23,6 @@ CREATE TABLE Coaches (
 	coachID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 	firstName NVARCHAR(50) NOT NULL,
 	lastName NVARCHAR(50) NOT NULL,
-	teamID INT NOT NULL FOREIGN KEY REFERENCES CreateYourTeam(teamID),
 )
 
 -- Select *
@@ -45,3 +44,15 @@ DROP TABLE CreateYourTeam
 DROP TABLE Players
 
 DROP TABLE Coaches
+
+-- Coach inserting
+
+INSERT INTO Coaches (firstName, lastName) VALUES ('Darvin','Ham')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Tyronne','Lue')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Doc','River')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Stephen','Silas')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Steve','Nash')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Mike','Budenholzer')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Taylor','Jenkins')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Chauncey','Billups')
+INSERT INTO Coaches (firstName, lastName) VALUES ('Jason','Kidd')
